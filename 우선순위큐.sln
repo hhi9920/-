@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "우선순위큐", "우선순위큐\우선순위큐.vcxproj", "{141F2846-5190-488F-8DD6-9D42330AC134}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{141F2846-5190-488F-8DD6-9D42330AC134}.Debug|x64.ActiveCfg = Debug|x64
+		{141F2846-5190-488F-8DD6-9D42330AC134}.Debug|x64.Build.0 = Debug|x64
+		{141F2846-5190-488F-8DD6-9D42330AC134}.Debug|x86.ActiveCfg = Debug|Win32
+		{141F2846-5190-488F-8DD6-9D42330AC134}.Debug|x86.Build.0 = Debug|Win32
+		{141F2846-5190-488F-8DD6-9D42330AC134}.Release|x64.ActiveCfg = Release|x64
+		{141F2846-5190-488F-8DD6-9D42330AC134}.Release|x64.Build.0 = Release|x64
+		{141F2846-5190-488F-8DD6-9D42330AC134}.Release|x86.ActiveCfg = Release|Win32
+		{141F2846-5190-488F-8DD6-9D42330AC134}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {780CEA21-84CD-4A23-B30A-3131DB6B878E}
+	EndGlobalSection
+EndGlobal
