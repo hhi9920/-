@@ -76,41 +76,36 @@ element delete_max_heap(HeapType *h) {
 
 }
 
-//히프를 이용한 정렬
-void heap_sort(element a[], int n)// 배열, 배열 요소 개수
-{
+//히프정렬 
+void heap_sort(element a[], int n) {
 	int i;
-	HeapType *h;
+	HeapType* h;
 
-	h = create();	//히프 생성
-	init(h);	//히프 초기화
+	h = create();
+	init(h);
 
-	//배열-> 힙
-	for (i = 0; i < n; i++) {//인덱스 0부터 사용
-		insert_max_heap(h, a[i]);	//배열 a 요소들을 힙에 삽입
-
+	//배열->힙
+	for (i = 0; i < n; i++) {
+		insert_max_heap(h, a[i]);
 	}
-
-	//힙->배열의 뒤쪽부터 저장
-	for (i = (n - 1); i >= 0; i--) {// 배열의 뒤쪽부터 저장하기 위해 (n-1)부터
-		a[i] = delete_max_heap(h);	//증가하는 순서로 새로 정렬된 배열
-
+	//힙->배열 뒤쪽부터 저장
+	for (i = (n - 1); i >= 0; i--) {
+		a[i] = delete_max_heap(h);	//오름차순
 	}
-	free(h);	//히프 동적 메모리 반환
+	free(h);
 }
 
 //메인함수
 #define SIZE 8
-int main(void)
-{
+int main(void) {
 	element list[SIZE] = { 23,56,11,9,56,99,27,34 };
-	heap_sort(list, SIZE);	//히프 정렬
+	heap_sort(list, SIZE);
 	for (int i = 0; i < SIZE; i++) {
-		//정렬이 완료된 배열을 출력
 		printf("%d ", list[i].key);
 	}
 	printf("\n");
 	return 0;
 }
+
 
 //result= 9 11 23 27 34 56 56 99
