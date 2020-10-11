@@ -1,3 +1,4 @@
+//<program 9.6 허프만코드>-최소히프
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX_ELEMENT 200
